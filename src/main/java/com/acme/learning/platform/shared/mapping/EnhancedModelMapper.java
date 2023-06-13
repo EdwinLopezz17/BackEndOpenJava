@@ -11,7 +11,7 @@ public class EnhancedModelMapper extends ModelMapper {
     public EnhancedModelMapper() {
     }
 
-    public <S, T>List<T>mapList(List<Student> sourceList, Class<StudentResource> targetClase){
+    public <S, T>List<T>mapList(List<Student> sourceList, Class<T> targetClase){
         return sourceList.stream().map(item->this.map(item,targetClase))
                 .collect(Collectors.toList());
     }
