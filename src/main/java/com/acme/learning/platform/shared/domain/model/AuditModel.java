@@ -1,4 +1,4 @@
-package com.acme.learning.platform.share.domain.model;
+package com.acme.learning.platform.shared.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
